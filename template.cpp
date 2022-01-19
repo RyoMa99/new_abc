@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
 
 #define ce(s) cout<< s << endl;
 #define sp(i) cout<< fixed << setprecision((int)i); // 浮動小数点の表示桁数を指定
