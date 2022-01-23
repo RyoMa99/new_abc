@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+#define ce(s) cout<< s << endl;
+#define sp(i) cout<< fixed << setprecision((int)i); // 浮動小数点の表示桁数を指定
+#define rep(ri,rj,rk) for (int ri = (int)rj; ri < (int)rk; ri++)
+#define rrep(ri,rj,rk) for (int ri = (int)rj; ri > (int)rk; ri--)
+#define all(x) x.begin(), x.end()
+
+int main()
+{
+  string s; cin >> s;
+  int a,b; cin >> a >> b;
+  a--;b--;
+  char tmp = s[a];
+  s[a] = s[b];
+  s[b] = tmp;
+  ce(s);
+  
+  return 0;
+}
