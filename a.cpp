@@ -7,10 +7,11 @@ typedef long long ll;
 #define rep(ri,rj,rk) for (int ri = (int)rj; ri < (int)rk; ri++)
 #define rrep(ri,rj,rk) for (int ri = (int)rj; ri > (int)rk; ri--)
 #define all(x) x.begin(), x.end()
-#define mod 998244353
 
 int main()
 {
-
+  double n; cin >> n;
+  string ans = pow(2,n) > n * n ? "Yes" : "No";
+  ce(ans); 
   return 0;
 }
