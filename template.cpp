@@ -7,6 +7,21 @@ typedef long long ll;
 #define rep(ri,rj,rk) for (int ri = (int)rj; ri < (int)rk; ri++)
 #define rrep(ri,rj,rk) for (int ri = (int)rj; ri > (int)rk; ri--)
 #define all(x) x.begin(), x.end()
+// 最大公約数 ユークリッドの互除法
+template <typename T>
+T gcd(T a, T b)
+{
+  if (a%b == 0) return b;
+  else return gcd(b,a%b);
+}
+
+// 最大公倍数
+template <typename T>
+T lcm(T a, T b)
+{
+  return a*b / gcd(a,b);
+}
+
 
 int main()
 {
